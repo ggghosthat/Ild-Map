@@ -16,7 +16,7 @@ class Delegater():
         self.ParserJSON = JSONPARSER.Parser
 
     def analyze_input (self, service, addrQuery) :
-        self.api_key = api_input
+        # self.api_key = api_input
         self.addr = addrQuery
         self.service = service
 

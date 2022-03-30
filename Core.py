@@ -8,15 +8,15 @@ from PyQt5.QtWebEngineWidgets import QWebEngineView
 from requests import api
 from folium import Map, Marker
 import io
-import JSONPARSER
+import json_handler.JSONPARSER
 import dbmodule.DBCONNECTION
 import datetime
-import mapper
+import mapper.mapper
 import request_delegater
 
 class Interface(QtWidgets.QMainWindow,mapper.Ui_mapper):
     
-    def __init__(self) :
+    def __init__(self):
         super().__init__()
         self.services = ('nominatim', 'yandex', 'opencage')
         self.setupUi(self)
